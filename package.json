@@ -1,0 +1,50 @@
+{
+  "name": "tadris-platform",
+  "version": "1.0.0",
+  "description": "منصة تدريس التعليمية - الجزائر والوطن العربي",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.4.0",
+    "@aws-sdk/client-s3": "^3.600.0",
+    "@prisma/client": "^5.18.0",
+    "@zoom/meetingsdk": "^3.8.0",
+    "bcryptjs": "^2.4.3",
+    "bullmq": "^5.12.0",
+    "ioredis": "^5.4.0",
+    "next": "14.2.5",
+    "next-auth": "^4.24.7",
+    "nodemailer": "^6.9.14",
+    "openai": "^4.56.0",
+    "@anthropic-ai/sdk": "^0.18.0",
+    "papaparse": "^5.4.1",
+    "jspdf": "^2.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "resend": "^4.0.0",
+    "twilio": "^5.2.2",
+    "zod": "^3.23.8",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.3",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "prisma": "^5.18.0",
+    "tailwindcss": "^3.4.7",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
+  }
+}
