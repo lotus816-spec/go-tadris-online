@@ -4,15 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>تدريس | منصة الدورات العربية</title>
-<meta name="description" content="منصة تدريس: دورات مباشرة ومسجلة للمعلمين والمدربين في الجزائر والوطن العربي — دفع بالبطاقة الذهبية وCCP وPayPal." />
-<style>
-  body { font-family: system-ui, Tahoma, sans-serif; margin: 0; background: #f8fafc; color: #111; }
-  header { background: #1d4ed8; color: #fff; padding: 1rem; text-align: center; }
-  main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; }
-  ul { line-height: 2; }
-  footer { text-align: center; color: #6b7280; padding: 2rem; font-size: .85rem; }
-</style>
+<meta name="description" content="منصة تدريس: دورات مباشرة ومسجلة للمعلمين والمدربين في الجزائر والوطن العربي." />
+<link rel="stylesheet" href="styles.css" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"ما هي منصة تدريس؟","acceptedAnswer":{"@type":"Answer","text":"منصة عربية للدورات المباشرة والمسجلة مع تقييم وشهادات ودفع جزائري وعالمي."}},
@@ -20,23 +13,24 @@
 </script>
 </head>
 <body>
-<header><h1>تدريس — علّم. درّب. ابنِ دخلك من معرفتك.</h1></header>
+<header><nav>
+<a class="logo" href="index.html">تدريس</a>
+<div><a href="index.html">الرئيسية</a><a href="courses.html">الدورات</a><a href="teachers.html">المعلمون</a><a href="pricing.html">الأسعار</a><a href="faq.html">أسئلة شائعة</a></div>
+</nav></header>
 <main>
-  <div class="card">
-    <h2>النسخة الكاملة للتطبيق</h2>
-    <p>هذه صفحة تعريفية ثابتة. التطبيق الكامل (Next.js + قاعدة بيانات + مصادقة + دفع) يحتاج استضافة تدعم الخادم مثل Vercel — الكود المصدري كامل في هذا المستودع.</p>
-    <ul>
-      <li>دورات مباشرة ومسجلة بفصول ودروس ومسارات تعلم</li>
-      <li>اختبارات وواجبات وشهادات برمز تحقق</li>
-      <li>دفع: بطاقة ذهبية / CCP / PayPal + كوبونات + عجلة هدايا</li>
-      <li>ذكاء اصطناعي: مساعد + زر Ask AI + مولد اختبارات</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h2>تشغيل النسخة الكاملة</h2>
-    <p dir="ltr"><code>cp .env.example .env → docker compose up -d → npm install → npx prisma migrate dev → npm run dev</code></p>
-  </div>
+<section class="hero">
+<h1>علّم. درّب. ابنِ دخلك من معرفتك.</h1>
+<p>دورات مباشرة ومسجلة، اختبارات وواجبات، شهادات موثقة، دفع جزائري وعالمي، وأدوات ذكاء اصطناعي.</p>
+<a class="btn" href="courses.html">تصفح الدورات</a>
+<a class="btn outline" href="pricing.html">ابدأ كمعلم</a>
+</section>
+<section class="grid">
+<div class="card"><h3>🎥 مباشر ومسجل</h3><p>دروس Zoom مباشرة مع تسجيل تلقائي، وفيديوهات مسجلة بجودة عالية.</p></div>
+<div class="card"><h3>📝 تقييم وشهادات</h3><p>اختبارات مؤقتة وواجبات بتصحيح يدوي وشهادة إتمام برمز تحقق.</p></div>
+<div class="card"><h3>💳 دفع جزائري وعالمي</h3><p>بطاقة ذهبية، بريدي موب، CCP، وPayPal للخارج.</p></div>
+<div class="card"><h3>🤖 ذكاء اصطناعي</h3><p>مساعد يجيب عن الأسئلة، زر Ask AI، ومولد اختبارات.</p></div>
+</section>
 </main>
-<footer>تدريس © 2026</footer>
+<footer>تدريس © 2026 — <a href="https://github.com/lotus816-spec/go-tadris-online">الكود المصدري</a></footer>
 </body>
 </html>
